@@ -1,6 +1,5 @@
 function link(event) {
-    let link = event.target.value; 
-    alert(link.charAt(0));
+    window.location.href = event.target.innerText;
 }
 
 let Mark = {
@@ -28,9 +27,6 @@ let Bill = {
     company: "Microsoft"
 }
 let obj = [Mark, Larry, Timothy, Bill];
-function link() {
-    window.location.href = 'https://mystat.itstep.org';
-}
 
 function showTable() {
     let table = document.querySelector('table');
